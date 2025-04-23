@@ -5,8 +5,15 @@ const Input = ({task, setList}) =>{
 
     const sendBtn =(e)=>{
         e.preventDefault();
-        setList([...task, inputValue]);
+        if(inputValue === ""){
+            alert("Please enter a task");
+            return;
+        }
+        else{
+            setList([...task, inputValue]);
         console.log(inputValue);
+
+        }
     }
     return(
         <>
