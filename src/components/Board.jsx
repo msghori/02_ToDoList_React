@@ -12,7 +12,7 @@ const Board = ({task,index, taskList, setTaskList}) =>{
     
     }
     return(
-        <div className="max-w-md flex flex-col justify-center text-center bg-gray-100 text-dark rounded-lg shadow-md p-4 mb-4">
+        <div className="max-w-md text-center bg-gray-100 text-dark rounded-lg shadow-md p-4 mb-4">
             <p className="text-dark">{task}</p>
             <button 
             onClick={deleteTask}
